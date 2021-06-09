@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <link rel="stylesheet" href="stylesheet.css">
+        <meta charset = "UTF-8">
+        <style>
+
+        </style>
+    </head>
+    <title>Website With VS Code</title>
+    
+    <body>
+    <h1 style="font-size:500%; font-family: impact; margin-top: 0px; margin-bottom: 0px;">Welcome to VS Code!</h1>
+    <br>
+    <p id="greeting">T</h1>
+
+    <div id="colorChanger">
+        <h1>Color Changer!</h1>
+        <button id="changeBackColor" value="Change Background">Change Background</button>&nbsp; 
+        <input type="textbox" id="bgColor" autocomplete="off" placeholder="Type a color...">
+        <br><br>
+
+        <button id="changeTextColor" value="Change Text Color">Change Text Color</button>&nbsp; 
+        <input type="textbox" id="textColor" autocomplete="off" placeholder="Type a color...">
+
+        <br><br>
+        <button id="randomColor" value="Random Color">Random Background Color</button>
+        <p id="hexcode"></p>
+        
+        <button id="resetColor" value="Reset Colors">Reset Colors</button>
+    </div>
+        <p>This Color Changer is made using JavaScript to access the Document Object Model of the webpage.  It accesses the ID of the text box and applies its value to the documents body style.</p>
+        <br><br>
+
+    <h1>Magic 8-Ball!</h1>
+    <br>
+    <input type="text" id="userQuestion" autocomplete="off" placeholder="Your question here..."></input>
+    <button id="askQuestion" value="Ask the 8Ball">Ask the 8Ball</button>
+    <br>
+    <h2 id="eightBallAnswer"></h2>
+    <br>
+    <p>This Magic 8Ball is created by generating a random number between 0 and 8 whenever the button is pressed and assiging each value to a unique response.  It is then applied to the document using the document's inner HTML.</p>
+    <br><br>
+
+<!--
+    <h1>Credit Card Validator</h1>
+    <br>
+    <input type="number" id="creditNumber" autocomplete="off" placeholder="Enter your CC number here"></input>
+    <button id="validateCred" value="Validate your card">Validate your Card</button>
+    </br>
+    <p>This credit card checker uses an algorithm to determine if a credit card number is valid using JavaScript.</p>
+    <br><br>
+-->
+    <h1>Age Calculator</h1>
+    <br>
+    <input type="number" id="userAge" autocomplete="off" placeholder="Enter your age"></input>
+    <br><br>
+    <input type="number" id="userYear" autocomplete="off" placeholder="Enter the year"></input>
+    <br><br>
+    <button onclick="calculateAge()" value="Calculate your age!">Calculate your age!</button>
+    <br>
+    <h2 id="ageResult"></h2>
+    <br>
+    <p>This script contains many varables that subtract from each other depending on whether the year chosen was before or during the persons lifetime. It uses various <em>else if</em> statements<p>
+    <script src="javascript.js"></script>
+    </body>
+
+</html>
